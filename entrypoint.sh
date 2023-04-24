@@ -3,9 +3,9 @@
 # Web Site:https://www.hicairo.com
 # Telegram:https://t.me/HiaiFeng
 
-UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
-VMESS_WSPATH=${VMESS_WSPATH:-'/vmess'}
-VLESS_WSPATH=${VLESS_WSPATH:-'/vless'}
+UUID=${UUID:-'aa04add9-5c68-aaaa-950c-08cd5320dfaa'}
+VMESS_WSPATH=${VMESS_WSPATH:-'/gomess1'}
+VLESS_WSPATH=${VLESS_WSPATH:-'/goless2'}
 URL=${HOSTNAME}-8080.csb.app
 
 sed -i "s#UUID#$UUID#g;s#VMESS_WSPATH#$VMESS_WSPATH#g;s#VLESS_WSPATH#$VLESS_WSPATH#g" /etc/mysql/config.json
@@ -23,15 +23,15 @@ cat > /usr/share/nginx/html/$UUID.html<<-EOF
 <title>Codesandbox</title>
 <style type="text/css">
 body {
-	  font-family: Geneva, Arial, Helvetica, san-serif;
+      font-family: Geneva, Arial, Helvetica, san-serif;
     }
 div {
-	  margin: 0 auto;
-	  text-align: left;
+      margin: 0 auto;
+      text-align: left;
       white-space: pre-wrap;
       word-break: break-all;
       max-width: 80%;
-	  margin-bottom: 10px;
+      margin-bottom: 10px;
 }
 </style>
 </head>
